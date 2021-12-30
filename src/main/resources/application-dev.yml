@@ -1,0 +1,8 @@
+spring:
+  boot:
+    admin:
+      ui:
+        public-url: 'https:'
+boot:
+  web:
+    hostname: https://sso-dev.hocgin.top

@@ -1,0 +1,8 @@
+boot:
+  sso:
+    client:
+      ignore-urls:
+        - /**
+  web:
+    hostname: http://sso.hocgin.local
+debug: true

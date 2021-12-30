@@ -1,0 +1,1 @@
+# rabbit-spring-boot-admin

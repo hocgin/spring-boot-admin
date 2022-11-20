@@ -25,11 +25,13 @@
     <java.version>11</java.version>
     <java.source.version>11</java.source.version>
     <java.target.version>11</java.target.version>
-    <boot-dependencies.version>1.0.22</boot-dependencies.version>
+    <boot-dependencies.version>1.0.51</boot-dependencies.version>
     <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
     <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
     <lombok.version>1.18.12</lombok.version>
     <mapstruct.version>1.4.1.Final</mapstruct.version>
+    <spring-boot-admin.version>2.3.1</spring-boot-admin.version>
+    <spring-boot.version>2.2.6.RELEASE</spring-boot.version>
   </properties>
 
   <dependencies>
@@ -53,6 +55,7 @@
     <dependency>
       <groupId>de.codecentric</groupId>
       <artifactId>spring-boot-admin-starter-client</artifactId>
+      <version>${spring-boot-admin.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -61,10 +64,12 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
+      <version>${spring-boot.version}</version>
     </dependency>
     <dependency>
       <groupId>org.mapstruct</groupId>
       <artifactId>mapstruct</artifactId>
+      <version>${mapstruct.version}</version>
     </dependency>
     <dependency>
       <groupId>in.hocg.boot</groupId>
@@ -73,10 +78,12 @@
     <dependency>
       <groupId>de.codecentric</groupId>
       <artifactId>spring-boot-admin-starter-server</artifactId>
+      <version>${spring-boot-admin.version}</version>
     </dependency>
     <dependency>
       <groupId>de.codecentric</groupId>
       <artifactId>spring-boot-admin-server-ui</artifactId>
+      <version>${spring-boot-admin.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -117,8 +124,8 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>in.hocg</groupId>
-        <artifactId>boot-dependencies</artifactId>
+        <groupId>in.hocg.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
         <version>${boot-dependencies.version}</version>
         <type>pom</type>
         <scope>import</scope>

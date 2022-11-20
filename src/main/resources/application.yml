@@ -29,10 +29,19 @@ boot:
         - /favicon.ico
         - /actuator/**
       has-any-role:
-        '[/*]':
+        '[/applications]':
           - 'ROLE_ADMIN'
           - 'ROLE_SBA'
-        '[/**]':
+        '[/wallboard]':
+          - 'ROLE_ADMIN'
+          - 'ROLE_SBA'
+        '[/journal]':
+          - 'ROLE_ADMIN'
+          - 'ROLE_SBA'
+        '[/about]':
+          - 'ROLE_ADMIN'
+          - 'ROLE_SBA'
+        '[/logout]':
           - 'ROLE_ADMIN'
           - 'ROLE_SBA'
   web:
